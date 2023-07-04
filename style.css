@@ -1,0 +1,388 @@
+/*Importar Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*Estilos da página Desktop*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #020228;
+}
+
+a img {
+    max-width: 160px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+ 
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: "Raleway", sans-serif;
+    padding: 5px 24px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+nav div {
+    width: 250px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div p a {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div p {
+    margin-right: 10px;
+}
+
+#assine-agora {
+    background-color: #b535f6;
+    transition: background-color 1.2s;
+    padding: 8px 26px;
+    border-radius: 20px;
+}
+
+header {
+    padding: 100px 0px 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation-name: fundoheader;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fundoheader {
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#header-div-icones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 28px 0px;
+    width: 500px;
+    height: 50px;
+}
+
+h1 {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    width: 550px;
+}
+
+h1 span {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#divisoria {
+    background-image: linear-gradient( 90deg, #5516ba, rgba(255, 0, 229, 0.5) 80% );
+    border: none;
+    width: 50%;
+    height: 5px;
+    margin: 36px 0px;
+}
+
+#assinaturas {
+    color: #fffe;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+#preco {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+#regras-promocao {
+    color: #fff;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 300px;
+    height: 50px;
+}
+
+header div span {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#planos {
+    background-image: url(images/background-movies-series.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 24px;
+    height: 700px;
+    margin-bottom: 150px;
+}
+
+#div-pai-planos {
+    margin: 40px 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.div-planos {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    max-width: 550px;
+    height: 600px;
+    border-radius: 8px;
+    background-image: linear-gradient(0deg, transparent, #3b1e63);
+    padding: 40px 60px;
+}
+
+h2 {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+}
+
+.mobile-multitelas {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 30px 0px;
+}
+
+.preco-planos {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff00e5;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+ul li {
+    list-style: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+main section div div div span {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+#cartaz {
+    display: grid;
+    margin: 0 auto;
+    padding: 50px 0px 100px 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 45px;
+    width: 75%;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.div-card {
+    border: 2px solid transparent;
+    transition:  border 1s, scale 1s;
+    border-radius: 16px;
+    scale: 1;
+}
+
+footer {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#div-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.links-div {
+    text-decoration: none;
+    color: #9e86ff;
+    transition: 0.5s;
+    font-size: 0.875rem;
+    font-weight: bold;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+footer span {
+    display: block;
+    font-size: 0.75rem;
+    color: #9e86ff;
+    margin: 20px 0px;
+    font-weight: 300;
+}
+
+#div-icones-footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 240px;
+    padding: 40px 0px 15px 0px;
+}
+
+.icones-footer {
+    width: 16px;
+    height: 18px;
+}
+
+/*Animações e estilos dinâmicos*/
+#assine-agora:hover {
+    color: black;
+    transition: background 1s, outline 1s, transform 1s;
+    background-color: white;
+}
+
+.links-div:hover {
+    transition: color 0.5s;
+    color: #fff;
+}
+
+.div-card:hover {
+    border: 2px solid #b535f6;
+    transition: border 1s, scale 1s;
+    border-radius: 16px;
+    scale: 1.1;
+}
+
+ul li:before {
+    content: "+";
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+/*botão ASSINE AGORA header*/
+header a {
+    outline: 2px solid transparent;
+    background-image: linear-gradient( 45deg, #9b34ef 0%, #490cb0 20%, transparent 50%);
+    margin: 20px 0px 45px 0px;
+    background-size: 250%;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-image 1s, outline 1s;
+}
+
+header a:hover{
+    background-image: none;
+    transition: outline 1s, transform 1s;
+    outline: 2px solid #ff00e5;
+
+}
+
+/*botões Planos*/
+button {
+    font-family: "Raleway", sans-serif;
+    background-image: linear-gradient( 45deg, #9b34ef 0%, #490cb0 20%,#490cb0 50% ,transparent 60%);
+    background-size: 250%;
+    width: 100%;
+    padding: 16px 50px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 500px;
+    border: none;
+    color: #fff;
+    outline: 3px solid transparent;
+    transition: background-image 1s, outline 1s;
+    text-align: center;
+}
+
+button:hover {
+    outline: 2px solid #ff00e5;
+    background: transparent;
+    transition: background-image 1s, outline 1s;
+}
+
+/*Animações gerais*/
